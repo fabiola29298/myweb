@@ -6,33 +6,27 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Ulupica Tech",
-  tagline: "Young Developer",
-  url: "ubiquitous-otter-c2984c.netlify.app",
-  baseUrl: "/",
-  onBrokenLinks: "throw",
-  onBrokenMarkdownLinks: "warn",
-  favicon: "img/favicon.ico",
-  organizationName: "fabiola29298", // Usually your GitHub org/user name.
-  projectName: "myweb", // Usually your repo name.
+  title: 'My Site',
+  tagline: 'Dinosaurs are cool',
+  url: 'https://ubiquitous-otter-c2984c.netlify.app',
+  baseUrl: '/',
+  onBrokenLinks: 'throw',
+  onBrokenMarkdownLinks: 'warn',
+  favicon: 'img/favicon.ico',
+
+  // GitHub pages deployment config.
+  // If you aren't using GitHub pages, you don't need these.
+  organizationName: 'facebook', // Usually your GitHub org/user name.
+  projectName: 'docusaurus', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: { defaultLocale: "en", locales: ["en"] },
-  plugins: [
-    "docusaurus-plugin-sass",
-    [
-      "@docusaurus/plugin-ideal-image",
-      {
-        quality: 85,
-        max: 2000,
-        min: 500,
-        steps: 4,
-        disableInDev: false,
-      },
-    ],
-  ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+  },
+
   presets: [
     [
       'classic',
@@ -40,13 +34,17 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          blogTitle: 'Tutorials and articles about Eightshift development kit',
-          blogDescription: 'Tutorials and articles about Eightshift development kit',
-          blogSidebarTitle: 'Latest posts',
           showReadingTime: true,
-          postsPerPage: 6,
+          // Please change this to your repo.
+          // Remove this to remove the "edit this page" links.
+          editUrl:
+            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -58,27 +56,8 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      metadata: [
-        {
-          name: "description",
-          content:
-            "I am software developer interested in technology and gadgets. Cloud-native and open-source enthusiast.",
-        },
-        {
-          name: "keywords",
-          content:
-            "fullstack,frontend,backend,developer,engineer,go,golang,javascript,graphql,grpc,rest,react,reactjs,kubernetes,devops,cloud,cloud-native,cka,ckad,open-source,gophers,silesia",
-        },
-        {
-          name: "twitter:card",
-          content: "summary",
-        },
-      ],
-      colorMode: {
-        respectPrefersColorScheme: true,
-      },
       navbar: {
-        title: 'ulupicatech.eth',
+        title: 'My Site',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -88,19 +67,11 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Resume',
-          },
-          {
-            to: '/blog',
-            activeBasePath: 'blog',
-            label: 'Blog',
-            position: 'right',
+            label: 'Tutorial',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
-
-          { to: "/projects", label: "Projects", position: "left" },
           {
-            href: 'https://github.com/fabiola29298',
+            href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
           },
@@ -110,41 +81,46 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: "Connect",
-            items: [
-              {
-                label: "Email me",
-                href: "mailto:pawel@kosiec.dev",
-              },
-              {
-                label: "LinkedIn",
-                href: "https://www.linkedin.com/in/pkosiec",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/pkosiec",
-              },
-            ],
-          },
-          {
-            title: 'Discover',
+            title: 'Docs',
             items: [
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
+            ],
+          },
+          {
+            title: 'Community',
+            items: [
               {
-                label: "About me",
-                to: "/",
+                label: 'Stack Overflow',
+                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               },
               {
-                label: "Projects",
-                to: "/projects",
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
+                label: 'Twitter',
+                href: 'https://twitter.com/docusaurus',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Blog',
+                to: '/blog',
+              },
+              {
+                label: 'GitHub',
+                href: 'https://github.com/facebook/docusaurus',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} UlupicaTech. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
