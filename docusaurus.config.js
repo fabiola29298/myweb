@@ -8,8 +8,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'Ulupica Tech',
   tagline: 'Young Developer',
-  url: 'https://fabiola29298.github.io',
-  baseUrl: '/myweb/',
+  url: 'ubiquitous-otter-c2984c.netlify.app',
+  baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
