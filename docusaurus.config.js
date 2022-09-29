@@ -6,23 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Ulupica Tech',
-  tagline: 'Young Developer',
-  url: 'ubiquitous-otter-c2984c.netlify.app',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
-  organizationName: 'fabiola29298', // Usually your GitHub org/user name.
-  projectName: 'myweb', // Usually your repo name.
+  title: "Ulupica Tech",
+  tagline: "Young Developer",
+  url: "ubiquitous-otter-c2984c.netlify.app",
+  baseUrl: "/",
+  onBrokenLinks: "throw",
+  onBrokenMarkdownLinks: "warn",
+  favicon: "img/favicon.ico",
+  organizationName: "fabiola29298", // Usually your GitHub org/user name.
+  projectName: "myweb", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
-  i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
-  },
+  i18n: { defaultLocale: "en", locales: ["en"] },
   plugins: [
     "docusaurus-plugin-sass",
     [
