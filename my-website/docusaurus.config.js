@@ -13,7 +13,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-
+  trailingSlash: false,
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'fabiola29298', // Usually your GitHub org/user name.
@@ -146,23 +146,6 @@ const config = {
               {
                 label: "Projects",
                 to: "/projects",
-              },
-            ],
-          },
-          {
-            title: "Blog feed",
-            items: [
-              {
-                label: "RSS",
-                to: "/blog/rss.xml",
-              },
-              {
-                label: "Atom",
-                to: "/blog/atom.xml",
-              },
-              {
-                label: "JSON",
-                to: "/blog/feed.json",
               },
             ],
           },
