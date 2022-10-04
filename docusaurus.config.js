@@ -18,6 +18,18 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
+  customFields: {
+    newsletter: {
+      action: "http://newsletter.kosiec.dev/add_subscriber",
+      method: "post",
+      emailFieldName: "member[email]",
+      firstNameFieldName: "member[first_name]",
+      submitButtonName: "member[subscribe]",
+      tosURL: "https://www.getrevue.co/terms",
+      privacyPolicyURL: "https://www.getrevue.co/privacy",
+      serviceName: "Revue",
+    },
+  },
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
