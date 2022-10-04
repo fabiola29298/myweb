@@ -9,3 +9,18 @@
   height: 200px;
   width: 200px;
 }
+.centralImage {
+  margin: 0 auto;
+  max-width: 25%;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-block: 1rem;
+}
+.buttons > a{
+  background: var(--ifm-color-primary-lightest);
+
+}

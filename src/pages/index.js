@@ -4,7 +4,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-
+import HomepageParagraphFeature from '../components/HomepageFeatures/paragraph';
+// {siteConfig.title} {siteConfig.tagline}
 import styles from './index.module.css';
 
 function HomepageHeader() {
@@ -12,13 +13,17 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <div className={clsx('center align', styles.centralImage)}>
+          <img   src="/img/centralimageWhite.png"></img>
+        </div>
+        <h1 className="title">Hi. I'm Fabiola Acarapi but I prefer <i>Ulupica</i></h1>
+
+        <p className="hero__subtitle">Young Developer from Bolivia</p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Latest blog  →
           </Link>
         </div>
       </div>
@@ -34,6 +39,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <HomepageParagraphFeature />
         <HomepageFeatures />
       </main>
     </Layout>

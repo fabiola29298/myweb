@@ -6,9 +6,9 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'Ulupica Tech',
+  tagline: 'Young Developer',
+  url: 'https://myweb-9v6.pages.dev/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,7 +26,19 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
+  plugins: [
+    "docusaurus-plugin-sass",
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 85,
+        max: 2000,
+        min: 500,
+        steps: 4,
+        disableInDev: false,
+      },
+    ],
+  ],
   presets: [
     [
       'classic',
@@ -34,17 +46,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
+          blogTitle: 'Tutorials and articles about Eightshift development kit',
+          blogDescription: 'Tutorials and articles about Eightshift development kit',
+          blogSidebarTitle: 'Latest posts',
           showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          postsPerPage: 6,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -56,8 +64,27 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        {
+          name: "description",
+          content:
+            "I am software developer interested in technology and gadgets. Cloud-native and open-source enthusiast.",
+        },
+        {
+          name: "keywords",
+          content:
+            "fullstack,frontend,backend,developer,engineer,go,golang,javascript,graphql,grpc,rest,react,reactjs,kubernetes,devops,cloud,cloud-native,cka,ckad,open-source,gophers,silesia",
+        },
+        {
+          name: "twitter:card",
+          content: "summary",
+        },
+      ],
+      colorMode: {
+        respectPrefersColorScheme: true,
+      },
       navbar: {
-        title: 'My Site',
+        title: 'ulupicatech.eth',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -67,11 +94,19 @@ const config = {
             type: 'doc',
             docId: 'intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Resume',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/blog',
+            activeBasePath: 'blog',
+            label: 'Blog',
+            position: 'right',
+          },
+          { to: '/blog', label: 'Blog', position: 'left' },
+
+          { to: "/projects", label: "Projects", position: "left" },
+          {
+            href: 'https://github.com/fabiola29298',
             label: 'GitHub',
             position: 'right',
           },
@@ -81,46 +116,41 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: "Connect",
+            items: [
+              {
+                label: "Email me",
+                href: "mailto:pawel@kosiec.dev",
+              },
+              {
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/in/pkosiec",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/pkosiec",
+              },
+            ],
+          },
+          {
+            title: 'Discover',
             items: [
               {
                 label: 'Tutorial',
                 to: '/docs/intro',
               },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: "About me",
+                to: "/",
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: "Projects",
+                to: "/projects",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} UlupicaTech. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
