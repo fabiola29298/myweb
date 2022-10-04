@@ -38,6 +38,18 @@ const config = {
         disableInDev: false,
       },
     ],
+    [
+      'content-docs',
+      /** @type {import('@docusaurus/plugin-content-docs').Options} */
+      ({
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
+        showLastUpdateAuthor: true,
+        showLastUpdateTime: true,
+      }),
+    ],
   ],
   presets: [
     [
@@ -84,7 +96,7 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'ulupicatech.eth',
+        title: 'ulupicatech.com',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
@@ -97,14 +109,17 @@ const config = {
             label: 'Resume',
           },
           {
-            to: '/blog',
-            activeBasePath: 'blog',
+            to: '/community/support',
             label: 'Blog',
+            position: 'left',
+            activeBasePath: `community`,
+          },
+          { to: "/projects", label: "Projects", position: "left" },
+          {
+            href: 'https://github.com/fabiola29298',
+            label: 'Twitter',
             position: 'right',
           },
-          { to: '/blog', label: 'Blog', position: 'left' },
-
-          { to: "/projects", label: "Projects", position: "left" },
           {
             href: 'https://github.com/fabiola29298',
             label: 'GitHub',

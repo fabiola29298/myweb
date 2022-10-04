@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Resume
 
-Hola, mi nombre es **Fabiola Acarapi**, mi nickname es **UlupicaTech**, aqui te presento
+Hola, mi nombre es **Fabiola Acarapi**, mi nickname es **Ulupica Tech**, aqui te presento
 mi trayectoria en diferentes perfiles como Quality Assurance, Activista, Profesora,
 Emprendedora, Voluntaria y Becaria.
 
