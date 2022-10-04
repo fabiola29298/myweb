@@ -1,4 +1,5 @@
 ---
+sidebar_position: 6
 slug: tradiciones
 title: Tradiciones - 29 de junio de 2022
 authors: ulupicatech

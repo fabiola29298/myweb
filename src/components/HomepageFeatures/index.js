@@ -13,7 +13,7 @@ const FeatureList = [
         book reviews and the chapters of the podcast that I&apos;m co-host.
       </>
     ),
-    link: '/blog'
+    link: '../../../community/support'
   },
   {
     title: 'Talks',
@@ -25,7 +25,7 @@ const FeatureList = [
 
       </>
     ),
-    link: '/blog'
+    link: '../../../docs/Events/2022021diajusticiasocial'
   },
   {
     title: 'Curriculum Vitae',
@@ -36,7 +36,7 @@ const FeatureList = [
         Here you will not only find my CV but my experience as an activist and my projects.
       </>
     ),
-    link: '/blog'
+    link: '../../../docs/intro'
   },
 ];
 

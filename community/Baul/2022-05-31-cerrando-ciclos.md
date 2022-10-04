@@ -1,4 +1,5 @@
 ---
+sidebar_position: 8
 slug: cerrando-ciclos
 title: Cerrando ciclos – Mayo
 authors: ulupicatech
