@@ -36,7 +36,7 @@ const FeatureList = [
         Here you will not only find my CV but my experience as an activist and my projects.
       </>
     ),
-    link: '../../../docs/intro'
+    link: '../../../docs/resume'
   },
 ];
 

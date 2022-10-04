@@ -96,27 +96,33 @@ const config = {
         respectPrefersColorScheme: true,
       },
       navbar: {
-        title: 'ulupicatech.com',
+        title: 'Ulupica Tech',
         logo: {
           alt: 'My Site Logo',
           src: 'img/logo.svg',
         },
         items: [
-          {
-            type: 'doc',
-            docId: 'intro',
-            position: 'left',
-            label: 'Resume',
-          },
+          { to: "/projects", label: "Projects", position: "left" },
           {
             to: '/community/support',
             label: 'Blog',
             position: 'left',
             activeBasePath: `community`,
           },
-          { to: "/projects", label: "Projects", position: "left" },
           {
-            href: 'https://github.com/fabiola29298',
+            type: 'doc',
+            docId: 'intro',
+            position: 'left',
+            label: 'Events & Interviews',
+          },
+
+          {
+            to: '/docs/resume',
+            label: 'Resume',
+            position: 'right',
+          },
+          {
+            href: 'https://twitter.com/fabi_dev',
             label: 'Twitter',
             position: 'right',
           },
@@ -135,15 +141,19 @@ const config = {
             items: [
               {
                 label: "Email me",
-                href: "mailto:pawel@kosiec.dev",
+                href: "mailto:fabiola29298@gmail.com",
               },
               {
                 label: "LinkedIn",
-                href: "https://www.linkedin.com/in/pkosiec",
+                href: "https://www.linkedin.com/in/fabiacarapi/",
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/pkosiec",
+                href: "https://twitter.com/fabi_dev",
+              },
+              {
+                label: "GitHub",
+                href: "https://github.com/fabiola29298",
               },
             ],
           },
@@ -151,16 +161,20 @@ const config = {
             title: 'Discover',
             items: [
               {
-                label: 'Tutorial',
+                label: 'Events & Interviews',
                 to: '/docs/intro',
               },
               {
-                label: "About me",
-                to: "/",
+                label: "Blog",
+                to: "/community/support",
               },
               {
                 label: "Projects",
                 to: "/projects",
+              },
+              {
+                label: "Resume",
+                to: "/docs/resume",
               },
             ],
           },
