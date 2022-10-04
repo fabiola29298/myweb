@@ -122,7 +122,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://twitter.com/fabi_dev',
+            href: 'https://twitter.com/ulupicaTech',
             label: 'Twitter',
             position: 'right',
           },
@@ -136,6 +136,7 @@ const config = {
       footer: {
         style: 'dark',
         links: [
+
           {
             title: "Connect",
             items: [
@@ -149,7 +150,7 @@ const config = {
               },
               {
                 label: "Twitter",
-                href: "https://twitter.com/fabi_dev",
+                href: "https://twitter.com/ulupicaTech",
               },
               {
                 label: "GitHub",
