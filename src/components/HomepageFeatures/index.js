@@ -42,6 +42,7 @@ const FeatureList = [
 
 function Feature({Svg, title, description}) {
   return (
+
     <div className={clsx('col col--4')}>
       <div className="text--center">
         <div className={clsx('center align', styles.centralImage)}>
@@ -65,7 +66,9 @@ function Feature({Svg, title, description}) {
 
 export default function HomepageFeatures() {
   return (
+
     <section className={styles.features}>
+
       <div className="container">
         <div className="row">
           {FeatureList.map((props, idx) => (

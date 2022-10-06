@@ -12,6 +12,7 @@ function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
+
       <div className="container">
         <div className={clsx('center align', styles.centralImage)}>
           <img   src="/img/centralimageWhite.png"></img>
@@ -37,7 +38,16 @@ export default function Home() {
     <Layout
       title={`Ulupica Tech`}
       description="Blog Personal">
+
       <HomepageHeader />
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H8VN6TT99E"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-H8VN6TT99E');
+      </script>
       <main>
         <HomepageParagraphFeature />
         <HomepageFeatures />
