@@ -40,14 +40,6 @@ export default function Home() {
       description="Blog Personal">
 
       <HomepageHeader />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-H8VN6TT99E"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments)}
-        gtag('js', new Date());
-
-        gtag('config', 'G-H8VN6TT99E');
-      </script>
       <main>
         <HomepageParagraphFeature />
         <HomepageFeatures />
