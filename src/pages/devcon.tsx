@@ -48,6 +48,13 @@ function HomepageHeader() {
             to="https://www.linkedin.com/in/fabiacarapi/">
             LinkedIn
           </Link>
+        </div><br></br>
+        <div className={styles.buttons}>
+          <Link
+            className="button button--secondary button--lg"
+            to="/docs/resume">
+            Resume
+          </Link>
         </div>
       </div>
     </header>
